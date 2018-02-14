@@ -14,7 +14,6 @@
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
-
   <?php if (!isset($_GET['submitted'])) { ?>
                <h1>Play with the HTML form</h1>
                 <form action="/index.php">
@@ -30,7 +29,6 @@
                             <br>
                             <b>Let`s go</b><br>
                           </button>
-
                     <br>
                     <label for="Color">Color </label>
                     <input id="Color" name="Color" type="color" required="" value="Color">
@@ -39,9 +37,5 @@
                     <input type="reset" value="Clear">
                     <p></p>
                 </form>
- <?php } ?>
-                
-
-
-
+ <?php } ?>           
 </body></html>
