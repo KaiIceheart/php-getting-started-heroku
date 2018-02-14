@@ -9,9 +9,15 @@
 <body cz-shortcut-listen="true"><script id="__bs_script__">//<![CDATA[
     document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
 //]]></script><script async="" src="/browser-sync/browser-sync-client.js?v=2.18.13"></script>
-           
+           <?php if (isset($_GET['submitted'])) { ?>
+    <h1>The server had accepted:</h1>
+    <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
+    <p>Try again? <a href="/index.php">Yes!</a></p>
+  <?php } ?>
+
+  <?php if (!isset($_GET['submitted'])) { ?>
                <h1>Play with the HTML form</h1>
-                <form action="/form">
+                <form action="/index.php">
                     <input type="hidden" name="submitted" value="yes">
                     <p>
                         <label for="my-radio-yes">radio Yes: </label>
