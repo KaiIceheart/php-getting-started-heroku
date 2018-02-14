@@ -6,12 +6,13 @@
     <title>Form test</title>
 </head>
 
-<body cz-shortcut-listen="true"><script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
-//]]></script><script async="" src="/browser-sync/browser-sync-client.js?v=2.18.13"></script>
+<body>
+
            <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
+    <p>radio: <?php echo htmlspecialchars($_GET['Login']); ?></p>
+    <p>radio: <?php echo htmlspecialchars($_GET['Color']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
   <?php if (!isset($_GET['submitted'])) { ?>
