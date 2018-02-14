@@ -11,8 +11,8 @@
            <?php if (isset($_GET['submitted'])) { ?>
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
-    <p>radio: <?php echo htmlspecialchars($_GET['Login']); ?></p>
-    <p>radio: <?php echo htmlspecialchars($_GET['Color']); ?></p>
+    <p>Login: <?php echo htmlspecialchars($_GET['Login']); ?></p>
+    <p>Color: <?php echo htmlspecialchars($_GET['Color']); ?></p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
   <?php if (!isset($_GET['submitted'])) { ?>
