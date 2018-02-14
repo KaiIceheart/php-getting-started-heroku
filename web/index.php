@@ -23,16 +23,16 @@
                         <input id="my-radio-yes" name="radio" type="radio" required="" value="Yes">
                         <label for="my-radio-no">radio No: </label>
                         <input id="my-radio-no" name="radio" type="radio" required="" value="No"></p>
-                   <p> 
+                   
                     <label for="Login">Login: </label>
-                    <input id="Login" name="Login" type="text" required="" value="text"></p>
+                    <input id="Login" name="Login" type="text" required="" value="text">
                     <button type="submit">
                             <br>
                             <b>Let`s go</b><br>
                           </button>
                     <br>
-                    <p> <label for="Color">Color </label>
-                    <input id="Color" name="Color" type="color" required="" value="Color"></p>
+                    <label for="Color">Color </label>
+                    <input id="Color" name="Color" type="color" required="" value="Color">
                     <br>
                     <br>
                     <input type="reset" value="Clear">
