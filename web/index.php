@@ -12,7 +12,7 @@
     <h1>The server had accepted:</h1>
     <p>radio: <?php echo htmlspecialchars($_GET['radio']); ?></p>
     <p>Login: <?php echo htmlspecialchars($_GET['Login']); ?></p>
-    <p>Color: <?php echo htmlspecialchars($_GET['Color']); ?></p>
+     <p>Color: <?php echo htmlspecialchars($_GET['Color']) <span style="background-color:<?php echo htmlspecialchars($_GET['Color'])"; ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p>Try again? <a href="/index.php">Yes!</a></p>
   <?php } ?>
   <?php if (!isset($_GET['submitted'])) { ?>
